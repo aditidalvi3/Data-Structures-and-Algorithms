@@ -18,14 +18,38 @@ class Patterns {
         }
     }
 
+    public void pattern3(int N){
+        for (int i = 0; i <= N; i++){
+            for (int j = 0; j < i; j++){
+                System.out.print(j + 1 + " ");
+            }
+            System.out.println();
+        }
+    }
+
+    public void pattern4(int N){
+        int m = 0;
+        for (int i = 0; i <= N; i++){
+            for (int j = 0; j < i; j++){
+                System.out.print(m + " ");
+            }
+            System.out.println();
+            m++;
+        }
+    }
+
     public static void main(String[] args) {
         Patterns patterns = new Patterns(); // Patterns is the object name
         int N = 5;
 
-        System.out.println("Pattern 1:"); // .pattern1 is the method name
+        /*System.out.println("Pattern 1:"); // .pattern1 is the method name
         patterns.pattern1(N);
 
         System.out.println("\nPattern 2:"); // we can use the same object to call another method
-        patterns.pattern2(N);
+        patterns.pattern2(N); 
+        */
+
+        System.out.println("Pattern 4:");
+        patterns.pattern4(N);
     }
 }
